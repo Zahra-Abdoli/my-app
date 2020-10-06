@@ -2,6 +2,7 @@ import React from "react";
 import "./Card.css";
 export const Card=props=>{
     return <div className="card-container">
-<image alt="monester" src={`https://robohash.org/${this.props.id}?set=set2%size=180*180`}></image>
-        {this.props.monster.map(monster=>(<h1>{monster.name}</h1>))}</div>
+<img alt="monester" src={`https://robohash.org/${props.monster.id}?set=set2%size=180*180`}></img>
+        <h1>{props.monster.name}</h1>
+        <h1>{props.monster.email}</h1></div>
 }
